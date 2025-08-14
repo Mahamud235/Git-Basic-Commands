@@ -51,3 +51,9 @@ Push Command: "git push -u origin main"
 ***File Stage Command           : "git add ."
 ***Commit Command               : 'git commit -m "V.02"'
 ***Push Command (After Changes) : "git push"
+
+12. Forcefully Push করা লাগে অনেক সময়
+    যখন Remote Repository/Live Repository তে কোন change হয় এবং তা Local Repository এর
+    সাথে না মিলে তখন git push command Use করলে Errors Show kore.তখন Remote Repository কে 
+    Override করতে Force Push USe করতে হয়।
+    Force Push: "git push -u origin main --force"
