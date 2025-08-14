@@ -50,4 +50,4 @@ Push Command: "git push -u origin main"
 
 ***File Stage Command           : "git add ."
 ***Commit Command               : 'git commit -m "V.01"'
-***Push Command (After Changes) : "git push -u origin main"
+***Push Command (After Changes) : "git push"
