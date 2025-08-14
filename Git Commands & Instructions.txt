@@ -49,5 +49,5 @@ Push Command: "git push -u origin main"
 11. পরেরবার শুধু ফাইল চেঞ্জ করলে
 
 ***File Stage Command           : "git add ."
-***Commit Command               : 'git commit -m "V.01"'
+***Commit Command               : 'git commit -m "V.02"'
 ***Push Command (After Changes) : "git push"
