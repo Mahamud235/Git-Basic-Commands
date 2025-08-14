@@ -1,0 +1,53 @@
+1. File Name লিখা Git Bash এর মাধ্যমে
+    touch "File Name"
+    touch "File Name _ Extension"
+
+2. Project Folder এ ঢোকার পর , Folder টি VS Code এ Open করতে হবে
+
+3. Bash Terminal Open করতে হবে (Git Bash আগেই installed & Configured থাকতে হবে)
+
+4. Bash Terminal এ "git init" এই command টি লিখতে হবে 
+
+    *** Git init যদি না করা থাকে তাহলেই শুধু Git init  Command Use করব
+    *** একবার Git init use করে যদি Repository Push করা হয় ;
+            Same Project Folder এর জন্য এই কোড আর লিখতে হবে না !!!
+
+5. //Ignore This Part যদি Repository New হয় এবং Repository তে কোন File না থাকলে নিচের Part Ignore করে,
+"Point 6" এ যেতে হবে।
+
+    *** যদি  targeted upload Repository তে কোন ফাইল আগে থেকেই থাকে , 
+            যেমন ঃ Readme.md, Licensce File তাহলে আগে Repository Link দিয়ে 
+            এই Command দিয়ে Remote Set করতে হবে!!
+Remote Set Command: "git remote add origin https://github.com/Mahamud235/Git-Basic-Commands.git"
+
+    *** এরপর Branch ঠিক করতে হবে। GitHub ডিফল্ট main, তাই লোকালটাও main করতে হবে
+Branch Set Command: "git branch -M main"
+
+    ***  রিমোটের ফাইল আগে টেনে নিতে হবে (Merge না করে Rebase করা ভালো)
+Rebase Command : "git pull origin main --rebase"
+
+6. লোকাল ফাইলগুলো স্টেজ করা
+    *** File Stage Command: "git add ." use করতে হবে 
+    যদি targeted upload Repository তে কোন ফাইল 
+    না থাকে তাহলে এই কমান্ড আগে USE করতে হবে। "Point 6" ignore হবে।
+
+7. Commit করতে হবে, History রাখে – কে কখন কী পরিবর্তন করল, সেটা Git মনে রাখে
+Commit Command : 'git commit -m "V.01"'
+
+//Ignore This Part যদি Repository New হয় এবং Repository তে কোন File না থাকলে নিচের Point 8,9 Ignore করে,
+"Point 10" এ যেতে হবে।
+
+8. রিমোট সেট করো
+Remote Set Command: "git remote add origin https://github.com/Mahamud235/Git-Basic-Commands.git"
+
+9.  Branch main করতে হবে, GitHub ডিফল্ট main, তাই লোকালটাও main করতে হবে
+Branch Set Command: "git branch -M main"
+
+10.পুশ করতে হবে এখন (প্রথমবার upstream সেট করে)
+Push Command: "git push -u origin main"
+
+11. পরেরবার শুধু ফাইল চেঞ্জ করলে
+
+***File Stage Command           : "git add ."
+***Commit Command               : 'git commit -m "V.01"'
+***Push Command (After Changes) : "git push -u origin main"
